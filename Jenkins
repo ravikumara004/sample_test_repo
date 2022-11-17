@@ -18,22 +18,24 @@ pipeline {
     }
 
     stages {
-        stage('Example') {
+        stage('clone') {
             steps {
                 echo "hello"
+                withCredentials([usernamePassword(credentialsId: 'ghp_9hZPQD', passwordVariable: 'pass', usernameVariable: 'user')]) {
+                sh 'git clone https://github.com/ravikumara004/sample_test_repo.git'
+                }
                 
                 script {
                     
                     echo "before"
                     cleanWs()
-                    sh 'git clone https://github.com/ravikumara004/Testmyrepo.git'
                     
                 }
                }
            }
         stage('clone') {
             steps {
-                echo 'git clone https://github.com/ravikumara004/Testmyrepo.git'
+                sh 'echo "ravi"'
             }
         }
     
