@@ -21,7 +21,11 @@ pipeline {
         stage('clone') {
             steps {
                 script {
-                git branch: 'dev', credentialsId: 'ghp_9hZPQD', url: 'https://github.com/ravikumara004/sample_test_repo.git'
+                   cleanWs() //working
+                   sh "git clone https://github.com/ravikumara004/sample_test_repo.git" //working
+               // 'git branch: 'dev', credentialsId: 'ghp_9hZPQD', url: 'https://github.com/ravikumara004/sample_test_repo.git' //working
+                
+                   //cleanWs() //working
                 }
             }
         }
