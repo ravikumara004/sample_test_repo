@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    parameters {
+    choice choices: [
+        'a',
+        'b', 
+        'c', 
+        'd'], description: 'select', name: 'Domain'
+    choice choices: [
+        'urlA', 
+        'urlB', 
+        'UrlC',
+        'UrlD'], description: 'slect url', name: 'url'
+    booleanParam defaultValue: true, 
+    name: 'dry_run'
+    string defaultValue: 'abcd', 
+    name: 'Name'
+    }
+
+    stages {
+        stage('Example') {
+            steps {
+                echo "hello"
+                
+                script {
+                    
+                    echo "before"
+                    cleanWs()
+                    sh 'git clone https://github.com/ravikumara004/Testmyrepo.git'
+                    
+                }
+               }
+           }
+        stage('clone') {
+            steps {
+                echo 'git clone https://github.com/ravikumara004/Testmyrepo.git'
+            }
+        }
+    
+    }
+}
