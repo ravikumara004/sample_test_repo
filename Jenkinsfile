@@ -20,7 +20,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git credentialsId: 'ghp_9hZPQD', url: 'https://github.com/ravikumara004/sample_test_repo.git'
+                git branch: 'dev', credentialsId: 'ghp_9hZPQD', url: 'https://github.com/ravikumara004/sample_test_repo.git'
             }
         }
     }
