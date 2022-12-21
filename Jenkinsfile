@@ -5,7 +5,7 @@ pipeline {
         'a',
         'b', 
         'c', 
-        'd'], description: 'select', name: 'Domain'
+        'd'], description: 'select', name: 'Domain add'
     choice choices: [
         'urlA', 
         'urlB', 
