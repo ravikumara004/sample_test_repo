@@ -1,6 +1,7 @@
 dev1
 dev2
-
+test1
+test2
 pipeline {
     agent any
     parameters {
