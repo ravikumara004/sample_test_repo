@@ -30,4 +30,21 @@ pipeline {
             }
         }
     }
+    stage('MyStage') {
+            steps {
+                script {
+                    try {
+                        sh '''
+                            echo "hello'
+                            echo "hi"
+                        '''
+                    } catch (Exception e) {
+                        echo "Error: ${e.message}"
+                    } finally {
+                        // Always execute this code, even if there was an error
+                        echo "Stage complete"
+                    }
+                }
+            }
+        }
 }
