@@ -29,8 +29,7 @@ pipeline {
                 }
             }
         }
-    }
-    stage('MyStage') {
+        stage('MyStage') {
             steps {
                 script {
                     try {
@@ -47,4 +46,6 @@ pipeline {
                 }
             }
         }
+    }
+
 }
