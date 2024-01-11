@@ -1,6 +1,9 @@
 name: call docker workflow
 
-on: workflow_call
+on: 
+ push:
+   branches:
+     - main
   
 
 jobs:
