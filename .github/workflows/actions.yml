@@ -3,7 +3,7 @@ name: call docker workflow
 on: 
  push:
    branches:
-     - main
+     - feat2
   
 
 jobs:
