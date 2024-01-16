@@ -3,11 +3,18 @@ name: call docker workflow
 on: 
  push:
    branches:
-     - feat
+     - feat2
   
 
 jobs:
 
   call-worlflow-using-branch:
-    uses: ravikumara004/sample-app/.github/workflows/docker.yml@main
+    uses: ravikumara004/sample_test_repo/.github/workflows/same_repo.yaml@main
+
+    
+
+
+    
+
+    
     
