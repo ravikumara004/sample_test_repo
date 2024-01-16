@@ -1,0 +1,18 @@
+name: Same Repo
+
+on:
+ workflow_call
+
+
+jobs:
+    
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: |
+        echo "i'm from the same repo"
