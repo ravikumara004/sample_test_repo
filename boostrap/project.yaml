@@ -16,7 +16,7 @@ spec:
       source:
         repoURL: https://github.com/ravikumara004/sample_test_repo.git
         targetRevision: main
-        path: boostrap/project
+        path: boostrap/project/
       destination:
         server: '{{url}}'
         namespace: guestbook
