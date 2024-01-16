@@ -15,7 +15,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/ravikumara004/sample_test_repo.git
-        targetRevision: HEAD
+        targetRevision: main
         path: boostrap/project
       destination:
         server: '{{url}}'
