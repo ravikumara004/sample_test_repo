@@ -18,7 +18,7 @@ spec:
     
     targetRevision: main
 
-    path: boostrap/project
+    path: project/poc
 
   destination: 
 
