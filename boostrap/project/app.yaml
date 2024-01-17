@@ -14,7 +14,7 @@ spec:
 
   source:
     
-    repoURL: https://gitlab.com/jasmine.harit/argocd-app-config.git
+    repoURL: https://github.com/ravikumara004/sample_test_repo.git
     
     targetRevision: main
 
