@@ -9,5 +9,5 @@ on:
 jobs:
 
   call-worlflow-using-branch:
-    uses: ravikumara004/sample-app/.github/workflows/docker.yml@main
+    uses: ravikumara004/sample-app/.github/workflows/docker.yml@new
     
