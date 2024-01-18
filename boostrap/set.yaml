@@ -12,6 +12,8 @@ spec:
   template:
     metadata:
       name: 'appset-guestbook'
+      labels:
+        env: root
     spec:
       project: default
       source:
