@@ -24,7 +24,7 @@ spec:
     
     targetRevision: main
 
-    path: project/poc
+    path: '**project/poc**'
 
   destination: 
 
